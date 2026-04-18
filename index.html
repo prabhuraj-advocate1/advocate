@@ -1,156 +1,170 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A. Prabhu Raj | Advocate | Madurai High Court</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. PRABHU RAJ | Advocate | High Court Madurai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-navy: #0a1128;
+            --premium-gold: #b08d57;
+            --white: #ffffff;
+            --soft-gray: #f4f4f4;
+        }
 
-    <style>
-        :root {
-            --gold: #b08d57;
-            --navy: #0a1128;
-            --white: #ffffff;
-            --light-bg: #f9f9f9;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Lato', sans-serif; background: var(--white); color: var(--primary-navy); line-height: 1.6; }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lato', sans-serif; background-color: var(--white); color: var(--navy); line-height: 1.4; }
+        /* Navigation - Fixed & Clean */
+        nav { 
+            background: var(--white); height: 80px; display: flex; 
+            justify-content: space-between; align-items: center; padding: 0 8%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+        .logo span { color: var(--premium-gold); }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { text-decoration: none; color: var(--primary-navy); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
 
-        /* Compact Navigation */
-        nav { 
-            background: var(--navy); padding: 10px 8%; 
-            display: flex; justify-content: space-between; align-items: center;
-            position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold);
-        }
-        .logo { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--gold); letter-spacing: 1px; }
-        nav ul { display: flex; list-style: none; }
-        nav ul li { margin-left: 20px; }
-        nav ul li a { text-decoration: none; color: var(--white); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; }
+        /* Hero - Exactly like Sethu Law Firm */
+        .hero { 
+            height: 100vh; background: linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), 
+            url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--white); text-align: center;
+        }
+        .hero h1 { font-family: 'Cinzel', serif; font-size: 4.5rem; color: var(--premium-gold); margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 25px; }
+        .gold-line { width: 80px; height: 3px; background: var(--premium-gold); }
 
-        /* Compact Hero Section */
-        .hero { 
-            height: 60vh; 
-            background: linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), 
-                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover; background-position: center;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            color: var(--white); text-align: center;
-        }
-        .hero h1 { font-family: 'Cinzel', serif; font-size: 3rem; color: var(--gold); margin-bottom: 5px; }
-        .hero p { font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
-        .line { width: 60px; height: 2px; background: var(--gold); margin-bottom: 15px; }
+        /* Compact Container for Laptop Screens */
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
 
-        /* Tightened Content Sections */
-        .section { padding: 40px 10%; }
-        .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 20px; text-align: center; position: relative; }
-        .section-title::after { content: ''; width: 40px; height: 2px; background: var(--gold); position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); }
+        /* Section Styling */
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 10px; }
+        .section-title .underline { width: 60px; height: 3px; background: var(--premium-gold); margin: 0 auto; }
 
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
-        .about-text h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 10px; }
-        .about-text p { font-size: 1rem; color: #444; margin-bottom: 10px; text-align: justify; }
+        /* About Grid */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-text h3 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 20px; }
+        .about-text p { font-size: 1.1rem; color: #555; margin-bottom: 15px; text-align: justify; }
 
-        /* Practice Areas Grid - No huge gaps */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
-        .card { 
-            background: var(--light-bg); padding: 25px 15px; border: 1px solid #eee;
-            text-align: center; transition: 0.3s; border-top: 3px solid var(--gold);
-        }
-        .card:hover { background: var(--white); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .card i { font-size: 2.2rem; color: var(--gold); margin-bottom: 10px; }
-        .card h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px; }
-        .card p { font-size: 0.9rem; color: #666; }
+        /* Practice Areas Grid - HD Cards */
+        .practice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .practice-card { 
+            background: #fafafa; padding: 40px; border: 1px solid #eee; text-align: center; 
+            transition: 0.4s; position: relative; overflow: hidden;
+        }
+        .practice-card:hover { transform: translateY(-10px); background: var(--white); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .practice-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: var(--premium-gold); }
+        .practice-card i { font-size: 3rem; color: var(--premium-gold); margin-bottom: 20px; }
+        .practice-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; }
 
-        /* Compact Map Section */
-        .map-section { padding: 30px 10%; background: #eee; }
-        .map-box { width: 100%; height: 350px; border: 5px solid white; }
+        /* Map Section - Integrated Location */
+        .map-section { background: var(--soft-gray); padding: 60px 0; }
+        .map-box { width: 100%; height: 450px; border: 10px solid var(--white); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
 
-        /* Compact Footer */
-        footer { background: var(--navy); color: white; padding: 30px 10% 15px; text-align: center; }
-        .footer-logo { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold); margin-bottom: 10px; }
-        .contact-info { font-size: 0.9rem; margin-bottom: 20px; opacity: 0.9; }
+        /* Footer */
+        footer { background: var(--primary-navy); color: var(--white); padding: 60px 8% 30px; text-align: center; }
+        .footer-logo { font-family: 'Cinzel', serif; font-size: 2rem; color: var(--premium-gold); margin-bottom: 20px; }
+        .contact-link { display: inline-block; padding: 15px 40px; border: 2px solid var(--premium-gold); color: var(--premium-gold); 
+                        text-decoration: none; font-weight: bold; text-transform: uppercase; margin-bottom: 30px; transition: 0.3s; }
+        .contact-link:hover { background: var(--premium-gold); color: var(--white); }
 
-        .btn { 
-            display: inline-block; padding: 12px 30px; background: var(--gold); 
-            color: white; text-decoration: none; font-weight: bold; font-size: 0.8rem;
-            text-transform: uppercase; margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .about-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2rem; }
-        }
-    </style>
+        /* Responsive Fixes */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 3rem; }
+            .about-grid { grid-template-columns: 1fr; text-align: center; }
+            nav { padding: 0 4%; }
+            nav ul { display: none; } /* Hide menu on mobile for exact look */
+        }
+    </style>
 </head>
 <body>
 
 <nav>
-    <div class="logo">A. PRABHU RAJ</div>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Practice</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="logo">A. <span>PRABHU RAJ</span></div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">The Advocate</a></li>
+        <li><a href="#practice">Expertise</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
 <section class="hero" id="home">
-    <p>Integrity • Excellence</p>
-    <h1>A. PRABHU RAJ</h1>
-    <div class="line"></div>
-    <p>Advocate - Madurai Bench of Madras High Court</p>
-    <a href="mailto:ap.associates1060@gmail.com" class="btn">Get Consultation</a>
+    <p>Justice • Integrity • Excellence</p>
+    <h1>A. PRABHU RAJ</h1>
+    <div class="gold-line"></div>
+    <p style="margin-top: 20px; letter-spacing: 2px;">Advocate | High Court of Madras</p>
 </section>
 
-<section class="section" id="about">
-    <div class="about-grid">
-        <div class="about-text">
-            <h2>Professional Legal Services</h2>
-            <p>மதுரை உயர்நீதிமன்ற கிளையில் 6 ஆண்டுகளுக்கும் மேலான அனுபவம் கொண்ட வழக்கறிஞர் பிரபு ராஜ், சிவில், கிரிமினல் மற்றும் வங்கி தொடர்பான வழக்குகளில் நிபுணத்துவம் பெற்றவர்.</p>
-            <p>500-க்கும் மேற்பட்ட வழக்குகளை கையாண்ட அனுபவம் மற்றும் SFI Finance போன்ற நிறுவனங்களுக்கு சட்ட ஆலோசகராக பணியாற்றிய அனுபவம் கொண்டவர்.</p>
-        </div>
-        <div style="text-align: center;">
-            <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=400&q=80" alt="Law" style="width: 100%; max-width: 350px; border: 8px solid #f4f4f4;">
-        </div>
-    </div>
-</section>
+<div class="container" id="about">
+    <div class="about-grid">
+        <div class="about-text">
+            <h3>Experienced Legal Counsel</h3>
+            <p>மதுரை உயர்நீதிமன்ற கிளையில் 6 ஆண்டுகளுக்கும் மேலான அனுபவம் கொண்ட வழக்கறிஞர் பிரபு ராஜ், சிவில், கிரிமினல் மற்றும் வங்கி சட்டங்களில் (Banking Laws) ஆழ்ந்த நிபுணத்துவம் பெற்றவர்.</p>
+            <p>இதுவரை சுமார் 500-க்கும் மேற்பட்ட வழக்குகளை வெற்றிகரமாக கையாண்டுள்ளார். SFI Finance போன்ற முன்னணி நிதி நிறுவனங்களுக்கு சட்ட ஆலோசகராக பணியாற்றி வருகிறார்.</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80" style="width: 100%; max-width: 450px; border: 15px solid #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+    </div>
+</div>
 
-<section class="section" id="services" style="background: #fff;">
-    <h2 class="section-title">Practice Areas</h2>
-    <div class="grid">
-        <div class="card">
-            <i class="fas fa-university"></i>
-            <h3>Banking Law</h3>
-            <p>DRT, SARFAESI மற்றும் வங்கி கடன் மீட்பு தொடர்பான சட்ட ஆலோசனைகள்.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-landmark"></i>
-            <h3>Property Law</h3>
-            <p>சொத்து ஆவணங்கள் சரிபார்ப்பு மற்றும் ரியல் எஸ்டேட் தொடர்பான சட்டச் சிக்கல்கள்.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-gavel"></i>
-            <h3>Litigation</h3>
-            <p>உயர்நீதிமன்றத்தில் சிவில் மற்றும் கிரிமினல் மேல்முறையீட்டு வழக்குகளை நடத்துதல்.</p>
-        </div>
-    </div>
+<section style="background: var(--soft-gray); padding: 80px 0;" id="practice">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Practice Areas</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="practice-grid">
+            <div class="practice-card">
+                <i class="fas fa-university"></i>
+                <h3>Banking & SARFAESI</h3>
+                <p>வங்கி கடன் மீட்பு, DRT மற்றும் வங்கி தொடர்பான அனைத்து சட்ட சிக்கல்களுக்கும் நுணுக்கமான தீர்வுகள்.</p>
+            </div>
+            <div class="practice-card">
+                <i class="fas fa-landmark"></i>
+                <h3>Property Matters</h3>
+                <p>சொத்து ஆவணங்கள் சரிபார்ப்பு (Title Verification), செட்டில்மெண்ட் மற்றும் சிவில் விவகாரங்கள்.</p>
+            </div>
+            <div class="practice-card">
+                <i class="fas fa-scale-balanced"></i>
+                <h3>High Court Litigation</h3>
+                <p>மதுரை உயர்நீதிமன்ற கிளையில் WRIT, சிவில் மற்றும் கிரிமினல் மேல்முறையீட்டு வழக்குகளை திறம்பட நடத்துதல்.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="map-section">
-    <h2 class="section-title" style="margin-bottom: 25px;">Location</h2>
-    <div class="map-box">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.123!2d78.18!3d9.93!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnNDguMCJOIDc4wrAxMCc0OC4wIkU!5e0!3m2!1sen!2sin!4v123456789" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Location</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="map-box">
+            <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
 </section>
 
 <footer id="contact">
-    <div class="footer-logo">A. PRABHU RAJ</div>
-    <div class="contact-info">
-        <p><i class="fas fa-location-dot"></i> Madurai Bench of Madras High Court, Madurai.</p>
-        <p><i class="fas fa-envelope"></i> ap.associates1060@gmail.com</p>
-    </div>
-    <p style="font-size: 0.7rem; color: #666;">© 2026 A. Prabhu Raj & Associates. All Rights Reserved.</p>
+    <div class="footer-logo">A. PRABHU RAJ</div>
+    <p style="letter-spacing: 3px; margin-bottom: 30px; opacity: 0.7;">ADVOCATE & LEGAL CONSULTANT</p>
+    <a href="mailto:ap.associates1060@gmail.com" class="contact-link">Email Us Today</a>
+    <div style="margin-top: 20px; opacity: 0.8;">
+        <p><i class="fas fa-location-dot"></i> Madurai Bench of Madras High Court, Madurai.</p>
+        <p><i class="fas fa-envelope"></i> ap.associates1060@gmail.com</p>
+    </div>
+    <p style="margin-top: 40px; font-size: 0.7rem; opacity: 0.4;">© 2026 A. Prabhu Raj & Associates. All Rights Reserved.</p>
 </footer>
 
 </body>
